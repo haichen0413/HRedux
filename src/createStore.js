@@ -24,6 +24,13 @@ export default function createStore(reducer, preloadedState, enhancer) {
 
     currentState = currentReducer(currentState, action)
 
+    const listeners = currentListeners = nextListeners
+    for (let i = 0; i < listeners.length; i++){
+      const listener = listeners[i]
+      listener()
+    }
+
+    return action
   }
 
   function subscribe(listener) {
@@ -43,10 +50,19 @@ export default function createStore(reducer, preloadedState, enhancer) {
     }
   }
 
+  function observable() {
+    const outerSubscribe = subscribe 
+    return {
+
+    }
+  }
+
   function replaceReducer(nextReducer) {
 
   }
 
+  dispatch({type: ActionTypes.INIT})
+  
   return {
     getState,
     dispatch,

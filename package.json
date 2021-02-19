@@ -1,0 +1,24 @@
+{
+  "name": "HRedux",
+  "version": "1.0.0",
+  "description": "- createStore - combineReducers - bindActionCreators - applyMiddleware - compose",
+  "main": "index.js",
+  "dependencies": {
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haichen0413/HRedux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haichen0413/HRedux/issues"
+  },
+  "homepage": "https://github.com/haichen0413/HRedux#readme"
+}
